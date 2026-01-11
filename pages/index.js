@@ -1,4 +1,4 @@
-import "../styles/globals.css"; // السطر الأهم لتفعيل التصميم
+
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
