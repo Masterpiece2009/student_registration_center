@@ -1,3 +1,4 @@
+import "../styles/globals.css"; // السطر الأهم لتفعيل التصميم
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
@@ -51,7 +52,7 @@ export default function Home() {
       if (res.ok) {
         setMsg({ type: "success", text: "تم الإرسال بنجاح. رقم الطالب: " + data.student_id });
         setForm({ full_name: "", phone: "", whatsapp: "", guardian_phone: "", level: "ابتدائي", year: "أول" });
-        setSubjects([{ subject: "", teacher: "", group: "", schedule: "" }]);
+        setSubjects([{ subject: " ", teacher: "", group: "", schedule: "" }]);
       } else {
         setMsg({ type: "error", text: data.error || "حدث خطأ ما" });
       }
